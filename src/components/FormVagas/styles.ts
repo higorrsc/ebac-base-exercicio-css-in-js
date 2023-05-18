@@ -7,6 +7,10 @@ export const Formulario = styled.form`
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 `
 
 export const Botao = styled.button`
@@ -18,9 +22,17 @@ export const Botao = styled.button`
   color: ${(props) => props.theme.corSecundaria};
   margin-left: 8px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
 `
 
 export const Campo = styled.input`
   padding: 0 16px;
   outline-color: ${(props) => props.theme.corPrincipal};
+
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
 `
